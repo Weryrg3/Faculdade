@@ -1,0 +1,27 @@
+no.py
+class No:
+    def __init__(self, valor):
+        self.valor = valor
+        self.proximo = None
+        self.anterior = None
+
+    # def inserir_inicio(lista, no):
+
+    def inserir_final(lista, no):
+        ultimo = lista
+        while ultimo.proximo != None:
+            ultimo = lista.proximo
+
+run.py
+from no import No
+
+no1 = No(1)
+no2 = No(2)
+no3 = No(3)
+
+no1.proximo = no2
+no2.anterior = no1
+no2.proximo = no3
+no3.anterior = no2
+
+No.inserir_final(no1, No(4))
