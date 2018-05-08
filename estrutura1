@@ -1,0 +1,23 @@
+Slide 1 
+
+A queue é uma das estruturas de dados fundamentais da ciência da computação.
+
+Queue(Fila) é um exemplo de uma estrutura de dados FIFO.
+
+Principais características e propriedades.
+Detalhes de implementação.
+
+##############################################################################
+
+The queue data structure ensures that you come out in the order in which you joined the line/queue. For example, if an element was inserted into the queue data structure, it would have to wait until it reaches the front of the queue before it can be removed.
+
+If you are waiting in line for a meal, you would naturally be upset if somebody decides to cut in.
+
+The concept described in the previous paragraph is known as FIFO, and it is a universal concept that is not just used in computer science. For example, FIFO is used in fields such as accounting.
+
+******************************************************************************
+A estrutura de dados da fila garante que você saia na ordem em que você ingressou na linha / fila. Por exemplo, se um elemento foi inserido na estrutura de dados da fila, ele teria que esperar até alcançar a frente da fila antes de poder ser removido.
+
+Se você está esperando na fila para uma refeição, você ficaria naturalmente chateado se alguém decidir cortar.
+
+O conceito descrito no parágrafo anterior é conhecido como FIFO, e é um conceito universal que não é usado apenas em ciência da computação. Por exemplo, o FIFO é usado em campos como contabilidade.

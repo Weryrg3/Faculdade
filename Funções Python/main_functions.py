@@ -1,14 +1,17 @@
 x = 10
 y = 5
-x + y == 15       # Adição
-x - y == 5        # Subtranção
-x * y == 50       # Multiplicação
-x / y == 2.0      # Divisão (float)
-x // y == 2       # Divisão (inteira)
-x % y == 0        # Resto da divisão
--x == -10         # operador negativo
-+x == 10          # operador positivo
-x ** y == 100000  # Elevação
+x + y == 15         # Adição
+x - y == 5          # Subtranção
+x * y == 50         # Multiplicação
+x / y == 2.0        # Divisão (float)
+x // y == 2         # Divisão (inteira)
+x % y == 0          # Resto da divisão
+-x == -10           # operador negativo
++x == 10            # operador positivo
+x ** y == 100000    # Elevação
+x, y = 3, 4         # x = 3, y = 4
+x, y = [3, 4]       # x = 3, y = 4
+x, *y = [3, 4, 5]   # x = 3, y = [4, 5]
 
 # bits
 x | y == 15
@@ -17,6 +20,7 @@ x & y == 0
 x << y == 320
 x >> y == 0
 ~x == -11
+
 
 # condição bool
 or and if elif else is not False True
