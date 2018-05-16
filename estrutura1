@@ -1,23 +1,226 @@
-Slide 1 
+Slide 1 capa
+Slide 2
 
 A queue é uma das estruturas de dados fundamentais da ciência da computação.
 
 Queue(Fila) é um exemplo de uma estrutura de dados FIFO.
 
-Principais características e propriedades.
-Detalhes de implementação.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-##############################################################################
-
-The queue data structure ensures that you come out in the order in which you joined the line/queue. For example, if an element was inserted into the queue data structure, it would have to wait until it reaches the front of the queue before it can be removed.
-
-If you are waiting in line for a meal, you would naturally be upset if somebody decides to cut in.
-
-The concept described in the previous paragraph is known as FIFO, and it is a universal concept that is not just used in computer science. For example, FIFO is used in fields such as accounting.
-
-******************************************************************************
-A estrutura de dados da fila garante que você saia na ordem em que você ingressou na linha / fila. Por exemplo, se um elemento foi inserido na estrutura de dados da fila, ele teria que esperar até alcançar a frente da fila antes de poder ser removido.
+A estrutura de dados da fila garante que você saia na ordem em que você entrou na fila. Por exemplo, se um elemento foi inserido na estrutura de dados da fila, ele teria que esperar até alcançar a frente da fila antes de poder ser removido.
 
 Se você está esperando na fila para uma refeição, você ficaria naturalmente chateado se alguém decidir cortar.
 
 O conceito descrito no parágrafo anterior é conhecido como FIFO, e é um conceito universal que não é usado apenas em ciência da computação. Por exemplo, o FIFO é usado em campos como contabilidade.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Slide 3
+
+O que é uma estrutura de dados FIFO?
+FIFO significa first in, first out.
+
+Woah isso soa tão técnico!
+
+Acredite, é um conceito ridiculamente fácil de entender e entender.
+
+FIFO significa apenas que os itens saem da fila na ordem em que entram. O primeiro elemento inserido é o primeiro a sair da fila.
+
+Por outro lado, o último elemento adicionado à fila é o último elemento a sair da fila. Se mais itens forem adicionados, esses itens se tornarão os últimos a sair.
+
+Uma estrutura de dados FIFO é aquela em que os dados são acessados e removidos na ordem em que foram inseridos.
+
+O oposto do FIFO é o LIFO, que significa último a entrar, primeiro a sair.
+
+Um excelente exemplo de uma estrutura de dados que utiliza a abordagem LIFO é a estrutura de dados da pilha.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Slide 4 Exemplo no mundo real
+
+Imagine que você está na fila para pegar um ônibus, bonde ou assistir a um filme.
+
+Você é atualmente a quinta pessoa na fila. Isso significa que você será capaz de seguir as primeiras quatro pessoas na sua frente.
+
+Você terá que esperar até que a pessoa na sua frente tenha obtido o.
+
+Da mesma forma, a pessoa à sua frente, também deve esperar até que a pessoa na frente deles prossiga para embarcar.
+
+É aqui que você pega a frase
+
+Senhor, por favor, espere na fila até a sua vez!
+
+Os itens na fila são desenfileirados na ordem em que entram na fila. Direito justo? Ninguém gosta de pessoas que cortam, especialmente quando elas têm que esperar muito tempo para chegar perto da frente da fila.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Slide 5 Casos de uso prático na programação
+
+Agora que entendemos conceitualmente a estrutura de dados da fila, vamos dar uma olhada em alguns casos de uso na programação.
+
+A fila é usada para manipular um trabalho ou dados na ordem em que eles ocorrem.
+
+Por exemplo, digamos que estamos coletando dados de um dispositivo que está enviando pacotes de dados consistentemente por meio do protocolo TCP / IP. E, de repente, a conexão fica instável por 10 segundos. Os dados que não foram enviados devido à perda de conexão podem ser armazenados em uma fila, de modo que quando a conexão é estabelecida após 10 segundos, ela dispara o pacote na ordem de ocorrência e não em alguma ordem aleatória. Dessa forma, o registro de data e hora para cada pacote de dados estará em ordem cronológica.
+
+Outros exemplos em que a estrutura de dados da fila seria ideal incluem
+
+* Job scheduling(Agendamento de trabalho) - Queremos executar cada trabalho na ordem em que eles ocorrem.
+* Network handing (Manipulação de rede) - queremos atender os usuários na ordem em que eles acessam o servidor. Por exemplo. Usuários esperando na fila pelo suporte técnico em um site de hospedagem como bluehost.com
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+apenas citação dado abstrato
+
+A fila é um tipo de dado abstrato, o que significa que é um tipo de dado definido por seus comportamentos.
+
+*** pesquisar dados abstratos ***
+
+Enquanto nossa implementação aderir semanticamente à definição da estrutura de dados da fila, estamos livres para implementá-la como desejarmos.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Slide 6 Variações da Queue
+
+Apart from the basic queue implementation, there are also variations and they are
+
+* Deque (double-ended queue). Not to be confused with the dequeue operation.
+* Circular queue.
+
+In double ended queues, we can insert and delete from the front and the back. In other words, you get the best of both the FIFO and LIFO world, but at the cost of additional memory.
+
+In circular queues, the first element is connected to the last element to make that circular shape.
+
+I smell pointers …
+
+By now, hopefully, it is making sense to you that implementing the queue data structure using linked lists might be more appropriate.
+
+Doing the queue array implementation, however, will work those muscles out and really make sure that the queue concept sticks to you like super glue.
+
+Don’t worry. In a future post, we will be implementing the queue data structure using linked lists.
+
+******************************************************************************
+Além da implementação básica da fila, também existem variações e são
+
+* Deque (fila dupla). Não deve ser confundido com a operação de desenfileiramento.
+* Fila circular.
+
+Nas filas de espera dupla, podemos inserir e excluir da frente e de trás. Em outras palavras, você obtém o melhor do mundo FIFO e LIFO, mas ao custo da memória adicional.
+
+Em filas circulares, o primeiro elemento é conectado ao último elemento para fazer essa forma circular.
+
+
+Agora, esperamos que esteja fazendo sentido para você que implementar a estrutura de dados da fila usando listas encadeadas seja mais apropriado.
+
+Fazer a implementação da matriz de filas, no entanto, irá trabalhar esses músculos para fora e realmente se certificar de que o conceito de fila gruda em você como super-cola.
+
+Não se preocupe. Em uma postagem futura, estaremos implementando a estrutura de dados da fila usando listas encadeadas.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Slide 7 Implementação da Queue na Estrutura de Dados
+
+There are multiple ways of implementing the queue data structure. In this tutorial, we will be using the two most common methods. We can implement the queue using the
+
+* Array or the
+* Linked list
+
+as the underlying data structure.
+
+The underlying data structure is simply the data structure that is used to store the variables behind the scene. For example, in the linked list, the underlying data structure will be nodes. Please do note that arrays can also be used as underlying data structure for both the queue and linked list.
+
+In the same way, we can also use the linked list or nodes as the underlying data structure for the queue.
+
+This involves setting the head as the first item of the queue. We are only able to interact with the head. The head only has a pointer to the next node.
+
+For your education, using the linked list as the underlying data structure is recommended. I will mention this many times to drill this into your head, because it it so important.
+
+More often than not, the linked list is the preferred underlying data structure for implementing the queue, because array need to be constantly resized.
+
+If you don’t know what a linked list is, I recommend reading an introduction to the linked list before proceeding.
+
+Why do arrays need to be resized? Because they are static data structures, meaning they are fixed in size upon creation. If the collection becomes too large for the array to hold, we need to create a new array and copy the contents over.
+
+******************************************************************************
+Existem várias maneiras de implementar a estrutura de dados da fila. Neste tutorial, usaremos os dois métodos mais comuns. Podemos implementar a fila usando o
+
+* Matriz ou o
+* Lista vinculada
+
+como a estrutura de dados subjacente.
+
+A estrutura de dados subjacente é simplesmente a estrutura de dados usada para armazenar as variáveis ​​por trás da cena. Por exemplo, na lista vinculada, a estrutura de dados subjacente será nós. Observe que as matrizes também podem ser usadas como estrutura de dados subjacente para a fila e a lista vinculada.
+
+Da mesma forma, também podemos usar a lista ou os nós vinculados como a estrutura de dados subjacente para a fila.
+
+Isso envolve definir a cabeça como o primeiro item da fila. Nós só somos capazes de interagir com a cabeça. A cabeça só tem um ponteiro para o próximo nó.
+
+Para sua educação, é recomendável usar a lista vinculada como estrutura de dados subjacente. Vou mencionar isso muitas vezes para perfurar isso em sua cabeça, porque é tão importante.
+
+Na maioria das vezes, a lista vinculada é a estrutura de dados subjacente preferencial para implementar a fila, porque a matriz precisa ser constantemente redimensionada.
+
+Se você não sabe o que é uma lista vinculada, recomendo ler uma introdução à lista vinculada antes de continuar.
+
+Por que os arrays precisam ser redimensionados? Porque são estruturas de dados estáticas, o que significa que elas são fixas em tamanho na criação. Se a coleção se tornar muito grande para a matriz ser mantida, precisamos criar uma nova matriz e copiar o conteúdo.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Slide 8 Interface da Queue
+
+For us to implement the queue, we need a basic interface. The basic queue should have the following methods.
+
+* enqueue(T data): Add an item to the end of the queue. Remember, you need to wait in line until it is your turn. No cutting in line okay? 🙂
+* dequeue(): Not to be confused with deque (double-ended queue), dequeue removes the first element from the queue. In certain implementations, the item that was removed is also returned.
+* front(): Get the first element of the queue without removing it.
+* size(): Get the size of the queue.
+* isEmpty(): Returns true if list is empty. Otherwise, return false.
+For the sake of being able to view what is in the queue, we will also be implementing a print() method to print out the items inside of the queue.
+
+******************************************************************************
+Para implementarmos a fila, precisamos de uma interface básica. A fila básica deve ter os seguintes métodos.
+
+* enfileiramento (dados T): adiciona um item ao final da fila. Lembre-se, você precisa esperar na fila até que seja a sua vez. Nenhum corte na linha está bem? 🙂
+* dequeue (): Não deve ser confundido com deque (fila dupla), o dequeue remove o primeiro elemento da fila. Em determinadas implementações, o item que foi removido também é retornado.
+* front (): obtém o primeiro elemento da fila sem removê-lo.
+* size (): Obtém o tamanho da fila.
+* isEmpty (): Retorna verdadeiro se a lista estiver vazia. Caso contrário, retorne falso.
+Para poder ver o que está na fila, também estaremos implementando um método print () para imprimir os itens dentro da fila.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Slide 9 Implementação de Array na Queue
+
+As mentioned in a previous section, we will begin investigating how to implement the queue data structure using the array implementation.
+
+We are going to be using our brain, so put on your thinking caps.
+
+In the array implementation, the front index or the reference variable that keeps track of the first item (the first non-null item) of the array.
+
+Because the array is a static data structure, we won’t be able to reduce the size of the array at run time. Instead, we will set the deleted elements to null and increment the front index.
+
+.......
+
+******************************************************************************
+Como mencionado em uma seção anterior, começaremos a investigar como implementar a estrutura de dados da fila usando a implementação da matriz.
+
+Nós vamos usar nosso cérebro, então coloque em seus limites de pensamento.
+
+Na implementação da matriz, o índice frontal ou a variável de referência que controla o primeiro item (o primeiro item não nulo) da matriz.
+
+Como a matriz é uma estrutura de dados estática, não podemos reduzir o tamanho da matriz em tempo de execução. Em vez disso, definiremos os elementos excluídos como nulos e incrementaremos o índice frontal.
+.......
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Slide 10 Métodos da Estrutura de Dados Queue
+
+******************************************************************************
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Slide 11 Método Enqueue
+
+******************************************************************************
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Slide 12 Método Dequeue
+
+******************************************************************************
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Slide 13 Método Front
+
+******************************************************************************
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Slide 14 Aumentando dinamicamente o tamanho da Queue 
+
+
