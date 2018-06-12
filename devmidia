@@ -1,0 +1,36 @@
+"Um índice é [...]. [...] uma estrutura que visa reduzir o tempo gasto com consultas ao banco, facilitando a busca pelos registros desejados. Para simplificar a compreensão do que é um índice, façamos um paralelo. Considere dois livros: um com um índice e outro sem. Em qual deles você terá mais facilidade e gastará menos tempo para encontrar o assunto que deseja. Do mesmo modo, isso acontece com as tabelas de um banco de dados."
+
+"Uma view é definida por muitos como uma "tabela virtual" que agrupa os dados desejados selecionados a partir de alguma consulta. Normalmente criamos views para facilitar a manipulação dos dados, pois com elas podemos inserir em uma "tabela", isto é, em uma visão, os dados que são necessários para algum tipo de processamento, reduzindo a complexidade na construção de consultas e, ao mesmo tempo, protegendo dados."
+
+SQL Procedural
+A manipulação de dados armazenados em um banco de dados vai muito além das operações básicas de inserção, consulta e remoção. A administração do banco, por sua vez, também não se limita a criar tabelas e seus relacionamentos, bem como a execução de backups e tarefas relacionadas.
+
+Ao avançar os estudos na área de banco de dados logo verificamos que o conjunto de comandos disponibilizado pela Structured Query Language, ou SQL, tem uma proposta muito bem delineada, mas não atende a todas as necessidades relacionadas a esse contexto, ao artefato que torna organizado e acessível um dos principais ativos de qualquer corporação, seus dados.
+
+Diante disso, é comum que os principais players de banco de dados, a exemplo da Microsoft e da Oracle, oferecem extensões à tão respeitada linguagem de consulta. A Microsoft, com a T-SQL, e a Oracle, com a PL/SQL, fornecem, aos profissionais de banco de dados, um rico conjunto de recursos que possibilitam a criação dos mais específicos procedimentos para atender às demandas de qualquer tipo de aplicação.
+
+Com elas, torna-se possível não apenas a manipulação dos dados, mas também o processamento dos mesmos, declarando, para isso, variáveis, estruturas de condição, repetição, procedimentos, funções, entre outros recursos.
+
+Para cobrir esse assunto, essas extensões, categorizadas como Linguagens Procedurais, preparamos os tópicos a seguir. Neles você encontrará todo o conteúdo de referência, já publicado na DevMedia, para aprender, principalmente, sobre Transact-SQL e Procedural Language/SQL.
+
+Transact-SQL - T-SQL
+A SQL é a linguagem padrão para lidarmos com bancos de dados. No entanto, alguns SGBDs optaram por criar variações dessa para prover novas funcionalidades ou aprimorar recursos oferecidos pela Structured Query Language. A T-SQL, por exemplo, foi criada pela Microsoft em conjunto com a Sybase.
+
+PL/SQL
+Além da T-SQL, outra opção bastante conhecida é a PL/SQL, ou Procedural Language/Structured Query Language. Criada pela Oracle, essa linguagem também oferece diferentes recursos para lidarmos com bancos de dados dessa empresa, assim como elaborar procedimentos que processarão dados para outras soluções Oracle. Abaixo, listamos um curso e alguns posts relacionados:
+
+Stored Procedures
+Um stored procedure, ou procedimento armazenado, é um recurso que permite a execução de lógica dentro do banco de dados, de forma semelhante a um método ou função no código de uma aplicação, mas escrito com a linguagem do banco de dados.
+
+Assim, ao invés de deixar toda a lógica na aplicação cliente, podemos trazer parte dela para o servidor de banco de dados, o que, em muitos casos, pode trazer ganhos de performance, ao evitar que dados precisem ser enviados pela rede para serem processados.
+
+A criação de stored procedures é definida pelo comando CREATE PROCEDURE e sua remoção, com o DROP PROCEDURE.
+
+Triggers
+Um trigger, ou gatilho, é um tipo de stored procedure que é chamado toda vez que um evento a ele relacionado acontece, por exemplo: a atualização de um dado no banco, a modificação da estrutura de uma tabela, entre outros.
+
+Assim, é comum utilizar triggers quando o objetivo é manter a consistência de dados ou fazer alguma auditoria, por exemplo. O uso desse recurso é observado em códigos de definição (DDL) e manipulação (DML) de dados.
+
+Para criar um trigger, iniciamos a declaração com o comando CREATE TRIGGER, e para remoção, DROP TRIGGER.
+
+

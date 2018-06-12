@@ -1,16 +1,14 @@
+nums = [] 
 for i in range(0, int(input())):
-    a, b = input().split(" ")
-    c = ""
-    n = ""
+    string = input()
+    num = int(input())
+    for i in string:
+        pos = ord(i) - num
+        if pos < 65:
+            pos = 91 - (65 - pos)
+            num += [chr(pos)]
+        else:
+            chr(pos), end=""
+    print()
 
-    l = list(zip(a, b))
-
-    if len(a) < len(b):
-        n = b[len(a):]
-    elif len(a) > len(b):
-        n = a[len(b):]
-
-    for i in range(0, len(l)):
-        c += l[i][0] + l[i][1]
-
-    print(c + n)
+for i in nums:
